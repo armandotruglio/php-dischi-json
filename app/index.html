@@ -18,34 +18,41 @@
 </head>
 
 <body>
-    <main>
-        <div id="app">
-            <h1 class="text-center mb-3">DISCHI</h1>
+    <div id="app">
+        <header class="bg-black py-3">
+            <h1 class="text-center text-light">DISCHI</h1>
+        </header>
+
+        <main class="bg-dark bg-gradient p-5">
             <div class="container">
-                <div class="row">
+                <div class="row g-5">
                     <div class="col-4" v-for="record in records">
-                        <ul class="card">
-                            <li>
-                                {{record.title}}
-                            </li>
-                            <li>
-                                {{record.author}}
-                            </li>
-                            <li>
-                                {{record.year}}
-                            </li>
-                            <li>
+                        <ul class="card list-unstyled bg-black text-light text-center p-5">
+                            <li class="mb-3">
                                 <img :src="record.poster" :alt="record.title" class="img-fluid">
                             </li>
-                            <li>
-                                {{record.genre}}
+                            <li class="mb-3">
+                                <h3 class="fs-5">
+                                    {{record.title}}
+                                </h3>
                             </li>
+                            <li class="mb-3">
+                                <h6>
+                                    {{record.author}}
+
+                                </h6>
+                            </li>
+                            <li>
+                                <h5 class="fw-bold">
+                                    {{record.year}}
+                                </h5>
+                            <li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
 </body>
 
