@@ -20,7 +20,7 @@
 <body>
     <main>
         <div id="app">
-            <h1>DISCHI</h1>
+            <h1 class="text-center mb-3">DISCHI</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-4" v-for="record in records">
@@ -33,6 +33,12 @@
                             </li>
                             <li>
                                 {{record.year}}
+                            </li>
+                            <li>
+                                <img :src="record.poster" :alt="record.title" class="img-fluid">
+                            </li>
+                            <li>
+                                {{record.genre}}
                             </li>
                         </ul>
                     </div>
