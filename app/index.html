@@ -27,16 +27,16 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-4" v-for="record in records">
-                        <ul class="card list-unstyled bg-black text-light text-center p-5">
+                        <ul class="card list-unstyled bg-black text-light text-center p-4">
                             <li class="mb-3">
-                                <img :src="record.poster" :alt="record.title" class="img-fluid">
+                                <img :src="record.poster" :alt="record.genre" class="img-fluid">
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-2">
                                 <h3 class="fs-5">
                                     {{record.title}}
                                 </h3>
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-2">
                                 <h6>
                                     {{record.author}}
 
